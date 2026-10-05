@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brighter Glory Nursery and Primary School | Ifelere Street, Oke Aro Titun, Akure</title>
+  <meta name="description" content="Official website of Brighter Glory Nursery and Primary School, Ifelere Street, Oke Aro Titun, Akure, Ondo State. Delivering academic excellence, creativity, and inspiring our pupils to achieve glory.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Leaflet CSS for Interactive Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       TOP ANNOUNCEMENT BAR
+       ========================================================================== -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="ticker-item">
+        <span class="badge-live">Admissions Open</span>
+        <span>Enrollment for 2026/2027 Academic Session is now ongoing!</span>
+      </div>
+      <div class="top-contacts">
+        <a href="tel:07064638054"><i class="fas fa-phone-alt"></i> 0706 463 8054</a>
+        <a href="https://wa.me/2347064638054" target="_blank" style="color:#25D366; font-weight:600;"><i class="fab fa-whatsapp"></i> WhatsApp: 0706 463 8054</a>
+        <a href="mailto:info@brightergloryschool.edu.ng"><i class="fas fa-envelope"></i> info@brightergloryschool.edu.ng</a>
+        <span><i class="fas fa-map-marker-alt"></i> Ifelere Street, Oke Aro Titun, Akure</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home-page" class="brand-logo js-page-nav" data-page="home-page">
+        <div class="logo-badge">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="brand-info">
+          <div class="brand-name">BRIGHTER <span>GLORY</span></div>
+          <div class="brand-sub">Nursery & Primary School</div>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a class="nav-link active" data-page="home-page"><i class="fas fa-home"></i> HOME</a></li>
+        <li><a class="nav-link" data-page="about-page"><i class="fas fa-university"></i> ABOUT US</a></li>
+        <li><a class="nav-link" data-page="services-page"><i class="fas fa-concierge-bell"></i> OUR SERVICES</a></li>
+        <li><a class="nav-link" data-page="events-page"><i class="fas fa-calendar-alt"></i> UPCOMING EVENTS</a></li>
+        <li><a class="nav-link" data-page="contact-page"><i class="fas fa-paper-plane"></i> CONTACT US</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" title="Toggle Light/Dark Theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="icon-btn" id="search-trigger" data-modal="modal-search" title="Search Portal">
+          <i class="fas fa-search"></i>
+        </button>
+        <button class="btn-primary" data-modal="modal-admission">
+          <i class="fas fa-paper-plane"></i> Apply Now
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       PAGE 1: HOME PAGE
+       ========================================================================== -->
+  <section id="home-page" class="page-section active-page">
+    
+    <!-- Hero Banner with REAL School Photo -->
+    <div class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <i class="fas fa-award"></i> Premier Citadel of Learning in Akure
+          </div>
+          <h1 class="hero-title">
+            Empowering Young Minds to <span>Shine Brighter</span>
+          </h1>
+          <p class="hero-subtitle">
+            Welcome to Brighter Glory Nursery and Primary School, located at Ifelere Street, Oke Aro Titun, Akure. We deliver academic excellence, foster creativity, and inspire our pupils to become the best versions of themselves.
+          </p>
+          <div class="hero-actions">
+            <button class="btn-primary" data-modal="modal-admission">
+              <i class="fas fa-user-plus"></i> Online Admission Form
+            </button>
+            <button class="btn-secondary js-page-nav" data-page="about-page">
+              <i class="fas fa-compass"></i> Our Mission & Vision
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-card-preview">
+          <img src="assets/main_gate.jpg" alt="Brighter Glory School Main Gate & Front Compound Akure">
+          <div class="hero-card-overlay">
+            <h4 style="font-size:1.2rem; font-weight:700;"><i class="fas fa-building" style="color:var(--accent-gold);"></i> Brighter Glory Campus Entrance</h4>
+            <p style="font-size:0.85rem; color:#cbd5e1;">Secured main gate, brick column pillars, and inspiring motivational wall paintings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Stats Bar -->
+    <div class="container stats-bar">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Common Entrance Pass Rate</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">1:12</div>
+          <div class="stat-label">Teacher to Pupil Ratio</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Dedicated Staff & Educators</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Happy Growing Scholars</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Real School Campus Facilities Showcase -->
+    <div class="container section-padding">
+      <div class="section-header">
+        <span class="section-badge">Authentic Campus Experience</span>
+        <h2 class="section-title">Our School Facilities & Compound</h2>
+        <p class="section-subtitle">Take a glance at our real school environment in Ifelere Street, Oke Aro Titun, Akure.</p>
+      </div>
+
+      <div class="facility-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="facility-card">
+          <div class="facility-img-wrapper">
+            <img src="assets/main_gate.jpg" alt="Brighter Glory School Main Gate & Entrance">
+          </div>
+          <div class="facility-body">
+            <h4>Main Gate & Secured Compound</h4>
+            <p>Black iron entrance gate with brick pillar columns, entrance ramp, and motivational wall art ("Dream Big Little One, Learn Today Lead Tomorrow").</p>
+          </div>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-img-wrapper">
+            <img src="assets/phonics_wall.jpg" alt="Interactive Phonics & Alphabet Learning Wall">
+          </div>
+          <div class="facility-body">
+            <h4>Interactive Phonics & Alphabet Wall</h4>
+            <p>Vibrant hand-painted educational wall mural featuring Alphabets (A-Z) with animal illustrations and counting numbers (1 to 25).</p>
+          </div>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-img-wrapper">
+            <img src="assets/classroom_building_wide.jpg" alt="Spacious Assembly Grounds & Classroom Block">
+          </div>
+          <div class="facility-body">
+            <h4>Assembly Grounds & Classroom Block</h4>
+            <p>Wide paved assembly compound with black and white kerb borders and colorful classroom exterior walls for outdoor play and gatherings.</p>
+          </div>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-img-wrapper">
+            <img src="assets/side_elevation_veranda.jpg" alt="Modern Brick-Tiled Classrooms & Blue Tinted Windows">
+          </div>
+          <div class="facility-body">
+            <h4>Modern Tiled Classrooms & Veranda</h4>
+            <p>Premium brick-tiled building facade with blue-tinted windows and a long covered veranda for comfort in all weather conditions.</p>
+          </div>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-img-wrapper">
+            <img src="assets/inspirational_mural_quote.png" alt="Inspirational Learning Wall Art Mural">
+          </div>
+          <div class="facility-body">
+            <h4>Inspirational Motivational Murals</h4>
+            <p>Hand-painted uplifting wall messages ("Ur Dreams Are Possible, Keep Learning And Never Give Up") inspiring pupil confidence daily.</p>
+          </div>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-img-wrapper">
+            <img src="assets/vision_mission_building.jpg" alt="Administrative & Academic Block with Vision Board">
+          </div>
+          <div class="facility-body">
+            <h4>Administrative Block & Official Board</h4>
+            <p>Clean campus building featuring our mounted official Vision, Mission, Motto, and Core Values board for pupils, parents, and visitors.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Official Mission & Vision Banner (Matching Real Board) -->
+    <div class="container section-padding" style="padding-top:0;">
+      <div style="background:linear-gradient(135deg, var(--primary-navy), var(--primary-blue)); border-radius:24px; padding:3.5rem 3rem; color:#ffffff; display:grid; grid-template-columns:1.2fr 0.8fr; gap:3rem; align-items:center; box-shadow:var(--glass-shadow);">
+        <div>
+          <span style="background:var(--accent-gold); color:var(--primary-navy); padding:4px 12px; border-radius:20px; font-size:0.8rem; font-weight:800; text-transform:uppercase;">Official Motto & Mission</span>
+          <h2 style="font-size:2.2rem; color:#ffffff; margin:0.75rem 0 1rem;">Achieving Glory Through Academic Excellence</h2>
+          <p style="font-size:1.05rem; color:rgba(255,255,255,0.9); line-height:1.7; margin-bottom:1.5rem;">
+            "Delivering excellence, fostering passion & creativity, community development, nurturing a love of learning & inspiring our pupils to become a better version of themselves."
+          </p>
+          <div style="display:flex; gap:1.5rem; flex-wrap:wrap;">
+            <div style="display:flex; align-items:center; gap:0.5rem;"><i class="fas fa-check-circle" style="color:var(--accent-gold);"></i> <strong>Excellence</strong></div>
+            <div style="display:flex; align-items:center; gap:0.5rem;"><i class="fas fa-check-circle" style="color:var(--accent-gold);"></i> <strong>Compassion</strong></div>
+            <div style="display:flex; align-items:center; gap:0.5rem;"><i class="fas fa-check-circle" style="color:var(--accent-gold);"></i> <strong>Integrity</strong></div>
+            <div style="display:flex; align-items:center; gap:0.5rem;"><i class="fas fa-check-circle" style="color:var(--accent-gold);"></i> <strong>Respect</strong></div>
+          </div>
+        </div>
+
+        <div style="border-radius:16px; overflow:hidden; border:3px solid var(--accent-gold); box-shadow:0 15px 35px rgba(0,0,0,0.4);">
+          <img src="assets/vision_mission_building.jpg" alt="Official Brighter Glory Vision & Mission Board" style="width:100%; height:280px; object-fit:cover; display:block;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Meet Our Founder Section (Home Page) -->
+    <div class="container section-padding" style="padding-top:0;">
+      <div class="section-header">
+        <span class="section-badge">Visionary Leadership</span>
+        <h2 class="section-title">Meet Our Founder & Proprietress</h2>
+        <p class="section-subtitle">Guiding Brighter Glory Nursery and Primary School with passion, dedication, and an unwavering commitment to academic excellence.</p>
+      </div>
+
+      <div class="founder-card">
+        <div class="founder-img-box">
+          <img src="assets/founder.jpg" alt="Pastor (Mrs) Elizabeth Adebiyi - Founder & Proprietress of Brighter Glory School">
+          <div class="founder-badge-floating">
+            <i class="fas fa-award" style="color:var(--accent-gold);"></i> Pastor (Mrs) Elizabeth Adebiyi
+          </div>
+        </div>
+
+        <div class="founder-content">
+          <div class="founder-title-sub">
+            <i class="fas fa-star" style="color:var(--accent-gold);"></i> Welcome Message From The Founder
+          </div>
+          <h3 style="margin-bottom:0.25rem;">Pastor (Mrs) Elizabeth Adebiyi</h3>
+          <p style="font-weight:700; color:var(--accent-gold-dark); font-size:1.1rem; margin-bottom:1.25rem;">Founder & Proprietress</p>
+          
+          <div class="founder-quote-box">
+            "Every child has a unique light within. At Brighter Glory, our passion is to guide, nurture, and polish that light so they shine brighter in character, wisdom, and academic achievement."
+          </div>
+
+          <p class="founder-bio">
+            Under the visionary leadership of Pastor (Mrs) Elizabeth Adebiyi, Brighter Glory Nursery and Primary School has grown into a premier citadel of learning at Ifelere Street, Oke Aro Titun, Akure. We believe in providing a safe, hygienic, and intellectually stimulating environment where foundational literacy, phonics, STEM curiosity, and moral integrity flourish together.
+          </p>
+
+          <div class="founder-contact-actions">
+            <a href="tel:07064638054" class="btn-primary">
+              <i class="fas fa-phone-alt"></i> Call Hotline: 0706 463 8054
+            </a>
+            <a href="https://wa.me/2347064638054?text=Hello%20Pastor%20Mrs%20Elizabeth%20Adebiyi,%20I%20would%20like%20to%20inquire%20about%20Brighter%20Glory%20School." target="_blank" class="btn-secondary" style="background:#25D366; color:#fff; border-color:#25D366;">
+              <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Parents Testimonials -->
+    <div class="container section-padding">
+      <div class="section-header">
+        <span class="section-badge">Parent Voices</span>
+        <h2 class="section-title">What Akure Parents Say About Us</h2>
+      </div>
+
+      <div class="cards-grid">
+        <div class="feature-card">
+          <div style="color:var(--accent-gold); margin-bottom:1rem;">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p style="font-style:italic; margin-bottom:1.5rem;">"Brighter Glory School has transformed my daughter's confidence! Her reading skills improved tremendously within her first term in Nursery 2. The teachers in Oke Aro are so attentive."</p>
+          <div style="font-weight:700; color:var(--primary-blue);">Mrs. Folashade Adebayo</div>
+          <div style="font-size:0.8rem; color:var(--text-muted);">Parent, Nursery 2 Scholar</div>
+        </div>
+
+        <div class="feature-card">
+          <div style="color:var(--accent-gold); margin-bottom:1rem;">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p style="font-style:italic; margin-bottom:1.5rem;">"The neat compound, educational alphabet wall, and strong moral foundation in Primary 4 are outstanding. Brighter Glory is truly a top citadel in Akure."</p>
+          <div style="font-weight:700; color:var(--primary-blue);">Engr. Segun Oladipo</div>
+          <div style="font-size:0.8rem; color:var(--text-muted);">Parent, Primary 4 Scholar</div>
+        </div>
+
+        <div class="feature-card">
+          <div style="color:var(--accent-gold); margin-bottom:1rem;">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p style="font-style:italic; margin-bottom:1.5rem;">"Clean environment along Ifelere street, reliable transport, and dedicated teachers. I recommend Brighter Glory to any parent looking for foundational excellence."</p>
+          <div style="font-weight:700; color:var(--primary-blue);">Dr. (Mrs.) Blessing Akpan</div>
+          <div style="font-size:0.8rem; color:var(--text-muted);">Parent, Primary 1 & Creche</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PAGE 2: ABOUT US
+       ========================================================================== -->
+  <section id="about-page" class="page-section">
+    <!-- Page Hero Banner with Image Under and Color Overlay On Top -->
+    <div class="page-banner-hero hero-about">
+      <div class="container">
+        <span class="section-badge"><i class="fas fa-university"></i> About Brighter Glory</span>
+        <h1 class="section-title">Our Identity, Mission & Vision</h1>
+        <p class="section-subtitle">Located at Ifelere Street, Oke Aro Titun, Akure, we are committed to unlocking every child's full potential.</p>
+      </div>
+    </div>
+
+    <div class="container section-padding" style="padding-top:0;">
+
+      <!-- Exact Official Mission & Vision (From Real Mounted Board) -->
+      <div class="mission-vision-grid">
+        <div class="mv-card">
+          <div class="mv-badge"><i class="fas fa-bullseye"></i> Our Mission</div>
+          <h2>Nurturing A Love For Learning</h2>
+          <p style="font-weight:600; font-size:1.1rem; color:var(--text-dark);">
+            "Delivering excellence, fostering passion & creativity, community development, nurturing a love of learning & inspiring our pupils to become a better version of themselves."
+          </p>
+        </div>
+
+        <div class="mv-card vision-card">
+          <div class="mv-badge"><i class="fas fa-eye"></i> Our Vision</div>
+          <h2>Achieving Glory Through Excellence</h2>
+          <p style="font-weight:600; font-size:1.1rem; color:var(--text-dark);">
+            "Empowering young minds to shine brighter, achieving glory through academic excellence."
+          </p>
+        </div>
+      </div>
+
+      <!-- Exact Core Values (From Real Mounted Board) -->
+      <div style="margin-bottom:4rem;">
+        <h3 style="text-align:center; font-size:1.8rem; margin-bottom:2rem;">Our Official Core Values</h3>
+        <div class="values-grid">
+          <div class="value-pill">
+            <div class="value-icon"><i class="fas fa-award"></i></div>
+            <div class="value-title">EXCELLENCE</div>
+          </div>
+          <div class="value-pill">
+            <div class="value-icon"><i class="fas fa-heart"></i></div>
+            <div class="value-title">COMPASSION</div>
+          </div>
+          <div class="value-pill">
+            <div class="value-icon"><i class="fas fa-hands-helping"></i></div>
+            <div class="value-title">INTEGRITY</div>
+          </div>
+          <div class="value-pill">
+            <div class="value-icon"><i class="fas fa-user-shield"></i></div>
+            <div class="value-title">RESPECT</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meet Our Founder Section (About Us Page) -->
+      <div style="margin-bottom:4rem;">
+        <div class="section-header">
+          <span class="section-badge">Leadership Profile</span>
+          <h2 class="section-title">Meet Our Founder</h2>
+          <p class="section-subtitle">Discover the vision, inspiration, and dedication behind Brighter Glory Nursery and Primary School, Akure.</p>
+        </div>
+
+        <div class="founder-card">
+          <div class="founder-img-box">
+            <img src="assets/founder.jpg" alt="Pastor (Mrs) Elizabeth Adebiyi - Founder & Proprietress of Brighter Glory School Akure">
+            <div class="founder-badge-floating">
+              <i class="fas fa-heart" style="color:var(--accent-gold);"></i> Pastor (Mrs) Elizabeth Adebiyi
+            </div>
+          </div>
+
+          <div class="founder-content">
+            <div class="founder-title-sub">
+              <i class="fas fa-quote-left" style="color:var(--accent-gold);"></i> Proprietress Address
+            </div>
+            <h3 style="margin-bottom:0.25rem;">Pastor (Mrs) Elizabeth Adebiyi</h3>
+            <p style="font-weight:700; color:var(--accent-gold-dark); font-size:1.1rem; margin-bottom:1.25rem;">Founder & Proprietress</p>
+
+            <div class="founder-quote-box">
+              "We measure our success not just by test scores, but by the confidence, compassion, and creative curiosity embedded in every pupil who walks through our doors."
+            </div>
+
+            <p class="founder-bio">
+              Welcome to Brighter Glory Nursery & Primary School. Under the guidance of Pastor (Mrs) Elizabeth Adebiyi, our institution was founded on the firm belief that quality early childhood and primary education is the greatest gift we can bestow upon a child. From our Creche to Nursery Phonics and Primary 1-6 classrooms, we ensure that every pupil receives personalized care, qualified teaching, and holistic development.
+            </p>
+
+            <div style="display:grid; grid-template-columns: repeat(2, 1fr); gap:1rem; margin-bottom:2rem; background:var(--bg-light); padding:1.25rem; border-radius:14px;">
+              <div>
+                <strong style="color:var(--primary-blue); font-size:1.05rem; display:block;"><i class="fas fa-shield-alt" style="color:var(--accent-gold);"></i> Our Commitment</strong>
+                <span style="font-size:0.88rem; color:var(--text-muted);">100% focus on child safety, discipline & academic excellence</span>
+              </div>
+              <div>
+                <strong style="color:var(--primary-blue); font-size:1.05rem; display:block;"><i class="fas fa-comments" style="color:var(--accent-gold);"></i> Direct Accessibility</strong>
+                <span style="font-size:0.88rem; color:var(--text-muted);">Open-door policy for all parents & guardians</span>
+              </div>
+            </div>
+
+            <div class="founder-contact-actions">
+              <button class="btn-primary" data-modal="modal-admission">
+                <i class="fas fa-user-plus"></i> Enroll Your Child Today
+              </button>
+              <a href="https://wa.me/2347064638054?text=Hello%20Pastor%20Mrs%20Elizabeth%20Adebiyi,%20I%20am%20interested%20in%20speaking%20with%20school%20management." target="_blank" class="btn-secondary" style="background:#25D366; color:#fff; border-color:#25D366;">
+                <i class="fab fa-whatsapp"></i> Direct Founder WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Campus Photo Gallery Grid -->
+      <div>
+        <div class="section-header">
+          <span class="section-badge">Campus Gallery</span>
+          <h2 class="section-title">Brighter Glory Photo Gallery</h2>
+          <p class="section-subtitle">Real moments captured around our school premises in Ifelere Street, Oke Aro Titun, Akure.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/main_gate.jpg" alt="Main Gate & Entrance Compound">
+            <div class="gallery-caption"><i class="fas fa-camera"></i> Main Gate & Front Compound Entrance</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/phonics_wall.jpg" alt="Phonics & Alphabet Learning Wall">
+            <div class="gallery-caption"><i class="fas fa-camera"></i> Hand-Painted Phonics Wall (A-Z & 1-25)</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/classroom_building_wide.jpg" alt="Assembly Grounds & Classroom Block">
+            <div class="gallery-caption"><i class="fas fa-camera"></i> Wide Assembly Grounds & Kerbed Walkway</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/side_elevation_veranda.jpg" alt="Tiled Building Elevation & Blue Windows">
+            <div class="gallery-caption"><i class="fas fa-camera"></i> Side Elevation & Blue Tinted Windows</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/inspirational_mural_quote.png" alt="Inspirational Wall Quote Mural">
+            <div class="gallery-caption"><i class="fas fa-camera"></i> Motivational Wall: "Ur Dreams Are Possible"</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/classroom_corridor.jpg" alt="Classroom Corridor & Walkway">
+            <div class="gallery-caption"><i class="fas fa-camera"></i> Covered Walkway & Rainbow Wall Veranda</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/vision_mission_building.jpg" alt="Official Vision & Mission Board">
+            <div class="gallery-caption"><i class="fas fa-camera"></i> Official Mission, Vision & Core Values Board</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/founder.jpg" alt="Pastor (Mrs) Elizabeth Adebiyi - Founder">
+            <div class="gallery-caption"><i class="fas fa-camera"></i> Pastor (Mrs) Elizabeth Adebiyi (Founder)</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PAGE 3: OUR SERVICES
+       ========================================================================== -->
+  <section id="services-page" class="page-section">
+    <!-- Page Hero Banner with Image Under and Color Overlay On Top -->
+    <div class="page-banner-hero hero-services">
+      <div class="container">
+        <span class="section-badge"><i class="fas fa-concierge-bell"></i> Comprehensive Programs</span>
+        <h1 class="section-title">What We Offer At Brighter Glory</h1>
+        <p class="section-subtitle">From early creche care to primary graduation, we offer holistic services designed to nurture your child's complete growth.</p>
+      </div>
+    </div>
+
+    <div class="container section-padding" style="padding-top:0;">
+
+      <div class="services-detail-grid">
+        <div class="service-big-card">
+          <div>
+            <div class="service-header-row">
+              <div class="service-badge-icon"><i class="fas fa-baby"></i></div>
+              <div>
+                <h3>Early Childhood & Creche</h3>
+                <span style="color:var(--accent-gold); font-weight:700; font-size:0.85rem;">Ages 3 Months – 2 Years</span>
+              </div>
+            </div>
+            <p style="color:var(--text-muted); font-size:0.95rem;">
+              Hygienic and loving infant care environment staffed by qualified early childhood caregivers.
+            </p>
+            <ul class="service-bullets">
+              <li><i class="fas fa-check-circle"></i> Individualized sleeping cribs & quiet nap areas</li>
+              <li><i class="fas fa-check-circle"></i> Early sensory play & fine motor skills stimulus</li>
+              <li><i class="fas fa-check-circle"></i> Daily health & diaper tracking report for parents</li>
+            </ul>
+          </div>
+          <button class="btn-primary" data-modal="modal-admission">Inquire For Creche</button>
+        </div>
+
+        <div class="service-big-card">
+          <div>
+            <div class="service-header-row">
+              <div class="service-badge-icon"><i class="fas fa-child"></i></div>
+              <div>
+                <h3>Nursery Education (1 & 2)</h3>
+                <span style="color:var(--accent-gold); font-weight:700; font-size:0.85rem;">Ages 3 – 5 Years</span>
+              </div>
+            </div>
+            <p style="color:var(--text-muted); font-size:0.95rem;">
+              Foundational Nursery learning using wall mural phonics, interactive toys, rhymes, and numbers.
+            </p>
+            <ul class="service-bullets">
+              <li><i class="fas fa-check-circle"></i> Jolly Phonics reading & pronunciation foundation</li>
+              <li><i class="fas fa-check-circle"></i> Mathematical logic & puzzle building (1-25+)</li>
+              <li><i class="fas fa-check-circle"></i> Rhymes, creative art, and social interaction</li>
+            </ul>
+          </div>
+          <button class="btn-primary" data-modal="modal-admission">Inquire For Nursery</button>
+        </div>
+
+        <div class="service-big-card">
+          <div>
+            <div class="service-header-row">
+              <div class="service-badge-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div>
+                <h3>Primary School (Primary 1 - 6)</h3>
+                <span style="color:var(--accent-gold); font-weight:700; font-size:0.85rem;">Ages 6 – 11 Years</span>
+              </div>
+            </div>
+            <p style="color:var(--text-muted); font-size:0.95rem;">
+              Rigorous primary education preparing pupils for top secondary schools and national common entrance exams.
+            </p>
+            <ul class="service-bullets">
+              <li><i class="fas fa-check-circle"></i> Mathematics, Science, English & ICT Literacy</li>
+              <li><i class="fas fa-check-circle"></i> Cultural studies, Civics & Character Building</li>
+              <li><i class="fas fa-check-circle"></i> Intensive Common Entrance & Olympiad Prep</li>
+            </ul>
+          </div>
+          <button class="btn-primary" data-modal="modal-admission">Inquire For Primary</button>
+        </div>
+
+        <div class="service-big-card">
+          <div>
+            <div class="service-header-row">
+              <div class="service-badge-icon"><i class="fas fa-bus"></i></div>
+              <div>
+                <h3>Safe School Transportation</h3>
+                <span style="color:var(--accent-gold); font-weight:700; font-size:0.85rem;">Akure Environs Coverage</span>
+              </div>
+            </div>
+            <p style="color:var(--text-muted); font-size:0.95rem;">
+              Safe school bus service serving Oke Aro, Ifelere, Alagbaka, Ijapo, Oba-Ile, and central Akure zones.
+            </p>
+            <ul class="service-bullets">
+              <li><i class="fas fa-check-circle"></i> Professional vetted drivers & onboard bus assistants</li>
+              <li><i class="fas fa-check-circle"></i> Reliable pickup and dropoff schedule</li>
+              <li><i class="fas fa-check-circle"></i> Doorstep or central junction pickup convenience</li>
+            </ul>
+          </div>
+          <button class="btn-secondary js-page-nav" data-page="contact-page">Check Transport Routes</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PAGE 4: UPCOMING EVENTS
+       ========================================================================== -->
+  <section id="events-page" class="page-section">
+    <!-- Page Hero Banner with Image Under and Color Overlay On Top -->
+    <div class="page-banner-hero hero-events">
+      <div class="container">
+        <span class="section-badge"><i class="fas fa-calendar-alt"></i> School Calendar & Highlights</span>
+        <h1 class="section-title">Upcoming School Events</h1>
+        <p class="section-subtitle">Stay connected with our academic calendar, inter-house sports, cultural celebrations, and parent assemblies.</p>
+      </div>
+    </div>
+
+    <div class="container section-padding" style="padding-top:0;">
+
+      <!-- Feature Event Countdown Banner -->
+      <div class="event-countdown-banner">
+        <div>
+          <span style="background:var(--accent-gold); color:var(--primary-navy); padding:4px 12px; border-radius:20px; font-size:0.8rem; font-weight:800; text-transform:uppercase;">Featured Highlight</span>
+          <h2 style="font-size:2rem; margin:0.75rem 0; color:#fff;">Annual Inter-House Sports & Cultural Carnival</h2>
+          <p style="color:rgba(255,255,255,0.85); font-size:0.95rem; margin-bottom:1.5rem;">Join us for an exciting day of athletic track events, march past, cultural displays, and parent novelty matches!</p>
+          <button class="btn-primary" data-modal="modal-rsvp"><i class="fas fa-calendar-check"></i> RSVP As Guest / Parent</button>
+        </div>
+
+        <div>
+          <div style="font-size:0.9rem; margin-bottom:0.75rem; text-transform:uppercase; font-weight:700; color:var(--accent-gold-light);">Event Begins In:</div>
+          <div class="countdown-clock">
+            <div class="clock-box"><div class="clock-num" id="cd-days">24</div><div class="clock-lbl">Days</div></div>
+            <div class="clock-box"><div class="clock-num" id="cd-hours">14</div><div class="clock-lbl">Hours</div></div>
+            <div class="clock-box"><div class="clock-num" id="cd-mins">32</div><div class="clock-lbl">Mins</div></div>
+            <div class="clock-box"><div class="clock-num" id="cd-secs">45</div><div class="clock-lbl">Secs</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event Category Filter -->
+      <div class="event-filter-tabs">
+        <button class="filter-tab active" data-category="all">All Events</button>
+        <button class="filter-tab" data-category="academic">Academic & Exams</button>
+        <button class="filter-tab" data-category="sports">Sports & Cultural</button>
+        <button class="filter-tab" data-category="parents">PTA Assemblies</button>
+      </div>
+
+      <!-- Event List Grid -->
+      <div class="events-list-grid">
+        <div class="event-card" data-category="sports">
+          <div>
+            <div class="event-date-badge">
+              <span class="day">28</span>
+              <span class="month">OCT</span>
+            </div>
+            <h3>Annual Inter-House Sports</h3>
+            <div class="event-meta">
+              <span><i class="fas fa-clock"></i> 9:00 AM</span>
+              <span><i class="fas fa-map-marker-alt"></i> School Sports Field</span>
+            </div>
+            <p style="color:var(--text-muted); font-size:0.9rem;">Track races, relays, taekwondo display, and crowning of the winning house champion.</p>
+          </div>
+          <button class="btn-secondary" data-modal="modal-rsvp" style="margin-top:1.5rem;"><i class="fas fa-check"></i> Register to Attend</button>
+        </div>
+
+        <div class="event-card" data-category="academic">
+          <div>
+            <div class="event-date-badge">
+              <span class="day">12</span>
+              <span class="month">NOV</span>
+            </div>
+            <h3>Spelling Bee & Phonics Exhibition</h3>
+            <div class="event-meta">
+              <span><i class="fas fa-clock"></i> 10:30 AM</span>
+              <span><i class="fas fa-map-marker-alt"></i> Main School Hall</span>
+            </div>
+            <p style="color:var(--text-muted); font-size:0.9rem;">Primary pupils present spelling competitions, phonics recitations, and science displays.</p>
+          </div>
+          <button class="btn-secondary" data-modal="modal-rsvp" style="margin-top:1.5rem;"><i class="fas fa-check"></i> Register to Attend</button>
+        </div>
+
+        <div class="event-card" data-category="parents">
+          <div>
+            <div class="event-date-badge">
+              <span class="day">05</span>
+              <span class="month">DEC</span>
+            </div>
+            <h3>1st Term PTA General Meeting</h3>
+            <div class="event-meta">
+              <span><i class="fas fa-clock"></i> 2:00 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> Main Auditorium</span>
+            </div>
+            <p style="color:var(--text-muted); font-size:0.9rem;">Interactive session between management, teachers, and parents on pupil welfare and school growth.</p>
+          </div>
+          <button class="btn-secondary" data-modal="modal-rsvp" style="margin-top:1.5rem;"><i class="fas fa-check"></i> Register to Attend</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PAGE 5: CONTACT US
+       ========================================================================== -->
+  <section id="contact-page" class="page-section">
+    <!-- Page Hero Banner with Image Under and Color Overlay On Top -->
+    <div class="page-banner-hero hero-contact">
+      <div class="container">
+        <span class="section-badge"><i class="fas fa-paper-plane"></i> Get In Touch</span>
+        <h1 class="section-title">We Would Love To Hear From You</h1>
+        <p class="section-subtitle">Visit our campus at Ifelere Street, Oke Aro Titun, Akure, or send us an instant message below.</p>
+      </div>
+    </div>
+
+    <div class="container section-padding" style="padding-top:0;">
+
+      <div class="contact-layout">
+        <!-- Contact Info Cards -->
+        <div class="contact-info-panel">
+          <div class="contact-item-card">
+            <div class="contact-icon-box"><i class="fas fa-map-marked-alt"></i></div>
+            <div>
+              <h4 style="font-size:1.1rem; margin-bottom:0.25rem;">Campus Location</h4>
+              <p style="color:var(--text-muted); font-size:0.95rem;">Ifelere Street, Oke Aro Titun, Akure, Ondo State, Nigeria</p>
+            </div>
+          </div>
+
+          <div class="contact-item-card">
+            <div class="contact-icon-box"><i class="fas fa-phone-volume"></i></div>
+            <div>
+              <h4 style="font-size:1.1rem; margin-bottom:0.25rem;">Direct Hotline & WhatsApp</h4>
+              <p style="color:var(--text-muted); font-size:0.95rem;">
+                <a href="tel:07064638054" style="color:var(--primary-blue); font-weight:700;">0706 463 8054</a> (Calls) &nbsp;|&nbsp;
+                <a href="https://wa.me/2347064638054" target="_blank" style="color:#25D366; font-weight:700;"><i class="fab fa-whatsapp"></i> 0706 463 8054</a> (WhatsApp)
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-item-card">
+            <div class="contact-icon-box"><i class="fas fa-envelope-open-text"></i></div>
+            <div>
+              <h4 style="font-size:1.1rem; margin-bottom:0.25rem;">Email Inquiry</h4>
+              <p style="color:var(--text-muted); font-size:0.95rem;">info@brightergloryschool.edu.ng<br>brightergloryakure@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item-card">
+            <div class="contact-icon-box"><i class="fas fa-door-open"></i></div>
+            <div>
+              <h4 style="font-size:1.1rem; margin-bottom:0.25rem;">Administrative Office Hours</h4>
+              <p style="color:var(--text-muted); font-size:0.95rem;">Monday – Friday: 7:30 AM – 4:30 PM (Prompt)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <h3 style="font-size:1.5rem; margin-bottom:1.5rem;"><i class="fas fa-paper-plane" style="color:var(--accent-gold);"></i> Send Us A Message</h3>
+          
+          <form id="contact-form">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+              <div class="form-group">
+                <label for="contact-name">Parent / Guardian Name *</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Mr. David Olatunji" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-phone">Phone Number *</label>
+                <input type="tel" id="contact-phone" class="form-control" placeholder="08012345678" required>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-top:1rem;">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="parent@gmail.com">
+            </div>
+
+            <div class="form-group" style="margin-top:1rem;">
+              <label for="contact-message">Inquiry Message *</label>
+              <textarea id="contact-message" class="form-control" rows="4" placeholder="How can we assist you regarding admission, fees, or campus tour?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width:100%; justify-content:center; margin-top:1.5rem;">
+              <i class="fas fa-paper-plane"></i> Submit Inquiry
+            </button>
+          </form>
+
+          <div id="contact-feedback" style="display:none;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PERSISTENT MAP BLOCK (ON EVERY PAGE BEFORE FOOTER)
+       ========================================================================== -->
+  <section class="map-section">
+    <div class="container">
+      <div class="map-container-box">
+        <div class="map-header">
+          <div>
+            <h3 style="font-size:1.4rem; color:var(--primary-blue);"><i class="fas fa-map-marked-alt" style="color:var(--accent-gold);"></i> School Location & Interactive Map</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted);">Ifelere Street, Oke Aro Titun, Akure, Ondo State, Nigeria</p>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=7.2355,5.1950" target="_blank" class="btn-secondary" style="font-size:0.85rem; padding:0.5rem 1rem;">
+            <i class="fas fa-directions"></i> Open In Google Maps
+          </a>
+        </div>
+        
+        <!-- Leaflet Map Canvas -->
+        <div id="leaflet-map"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="logo-badge"><i class="fas fa-star"></i></div>
+            <div class="brand-info">
+              <div class="brand-name" style="color:#fff;">BRIGHTER <span style="color:var(--accent-gold);">GLORY</span></div>
+              <div class="brand-sub">Nursery & Primary School</div>
+            </div>
+          </div>
+          <p>
+            Brighter Glory Nursery and Primary School is a beacon of academic excellence, creativity, and character located in Ifelere Street, Oke Aro Titun, Akure.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Pages</h4>
+          <ul class="footer-links">
+            <li><a class="js-page-nav" data-page="home-page"><i class="fas fa-chevron-right"></i> Home Page</a></li>
+            <li><a class="js-page-nav" data-page="about-page"><i class="fas fa-chevron-right"></i> About Us (Mission/Vision)</a></li>
+            <li><a class="js-page-nav" data-page="services-page"><i class="fas fa-chevron-right"></i> Our Services & Programs</a></li>
+            <li><a class="js-page-nav" data-page="events-page"><i class="fas fa-chevron-right"></i> Upcoming Events</a></li>
+            <li><a class="js-page-nav" data-page="contact-page"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">School Services</h4>
+          <ul class="footer-links">
+            <li><a data-modal="modal-admission"><i class="fas fa-chevron-right"></i> Creche & Daycare</a></li>
+            <li><a data-modal="modal-admission"><i class="fas fa-chevron-right"></i> Nursery Education</a></li>
+            <li><a data-modal="modal-admission"><i class="fas fa-chevron-right"></i> Primary 1 - 6 Classes</a></li>
+            <li><a data-modal="modal-admission"><i class="fas fa-chevron-right"></i> School Bus Transport</a></li>
+            <li><a data-modal="modal-admission"><i class="fas fa-chevron-right"></i> After-School Care</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">School Newsletter</h4>
+          <p style="font-size:0.85rem; color:#94a3b8;">Subscribe to receive school term announcements and academic bulletins.</p>
+          <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to Brighter Glory Newsletter!');">
+            <input type="email" class="form-control" placeholder="Enter your email address" required style="font-size:0.85rem;">
+            <button type="submit" class="btn-primary" style="padding:0.6rem; justify-content:center;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Brighter Glory Nursery & Primary School, Akure. All Rights Reserved.</div>
+        <div style="font-weight:600; color:var(--accent-gold-light);">Designed with Excellence for Brighter Glory</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL DIALOG OVERLAYS
+       ========================================================================== -->
+  <div class="modal-overlay" id="modal-overlay">
+    
+    <!-- 1. Admission Application Modal -->
+    <div class="modal-container modal-content" id="modal-admission" style="display:none;">
+      <button class="modal-close-btn js-close-modal"><i class="fas fa-times"></i></button>
+      <div style="text-align:center; margin-bottom:1.5rem;">
+        <span style="background:rgba(245, 158, 11, 0.15); color:var(--accent-gold); padding:4px 12px; border-radius:20px; font-size:0.8rem; font-weight:800; text-transform:uppercase;">Admission Portal 2026/2027</span>
+        <h2 style="font-size:1.8rem; color:var(--primary-blue); margin-top:0.5rem;">Online Student Application</h2>
+      </div>
+
+      <form id="admission-form">
+        <div class="form-group" style="margin-bottom:1rem;">
+          <label for="adm-student-name">Child's Full Name *</label>
+          <input type="text" id="adm-student-name" class="form-control" placeholder="e.g. Samuel Temitope Adebayo" required>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem;">
+          <div class="form-group">
+            <label for="adm-dob">Date of Birth *</label>
+            <input type="date" id="adm-dob" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="adm-class">Class Applying For *</label>
+            <select id="adm-class" class="form-control" required>
+              <option value="Creche">Creche / Daycare</option>
+              <option value="Nursery 1">Nursery 1</option>
+              <option value="Nursery 2">Nursery 2</option>
+              <option value="Primary 1">Primary 1</option>
+              <option value="Primary 2">Primary 2</option>
+              <option value="Primary 3">Primary 3</option>
+              <option value="Primary 4">Primary 4</option>
+              <option value="Primary 5">Primary 5</option>
+              <option value="Primary 6">Primary 6</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem;">
+          <div class="form-group">
+            <label for="adm-parent-name">Parent / Guardian Name *</label>
+            <input type="text" id="adm-parent-name" class="form-control" placeholder="Full Name" required>
+          </div>
+          <div class="form-group">
+            <label for="adm-parent-phone">Parent Phone Number *</label>
+            <input type="tel" id="adm-parent-phone" class="form-control" placeholder="08012345678" required>
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label for="adm-address">Home Address in Akure *</label>
+          <input type="text" id="adm-address" class="form-control" placeholder="e.g. Oke Aro / Alagbaka, Akure" required>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">
+          <i class="fas fa-check-circle"></i> Submit Application Slip
+        </button>
+      </form>
+    </div>
+
+    <!-- 2. Event RSVP Modal -->
+    <div class="modal-container modal-content" id="modal-rsvp" style="display:none;">
+      <button class="modal-close-btn js-close-modal"><i class="fas fa-times"></i></button>
+      <div style="text-align:center; margin-bottom:1.5rem;">
+        <i class="fas fa-calendar-check" style="font-size:2.5rem; color:var(--accent-gold);"></i>
+        <h2 style="font-size:1.8rem; color:var(--primary-blue); margin-top:0.5rem;">Event Attendance RSVP</h2>
+        <p style="color:var(--text-muted); font-size:0.9rem;">Confirm your attendance for upcoming Brighter Glory school activities.</p>
+      </div>
+
+      <form onsubmit="event.preventDefault(); alert('RSVP Confirmed! We look forward to seeing you.'); document.getElementById('modal-overlay').classList.remove('active');">
+        <div class="form-group" style="margin-bottom:1rem;">
+          <label>Full Name *</label>
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="form-group" style="margin-bottom:1rem;">
+          <label>Phone Number *</label>
+          <input type="tel" class="form-control" placeholder="08012345678" required>
+        </div>
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label>Number of Guests Attending</label>
+          <input type="number" class="form-control" value="1" min="1" max="5">
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">Confirm RSVP</button>
+      </form>
+    </div>
+
+    <!-- 3. Global Search Modal -->
+    <div class="modal-container modal-content" id="modal-search" style="display:none; max-width:550px;">
+      <button class="modal-close-btn js-close-modal"><i class="fas fa-times"></i></button>
+      <h3 style="margin-bottom:1rem; color:var(--primary-blue);"><i class="fas fa-search"></i> Search School Portal</h3>
+      <input type="text" id="global-search-input" class="form-control" placeholder="Search for admission, gallery, events..." style="padding:1rem; font-size:1.1rem; margin-bottom:1rem;">
+      <div id="search-results-list" style="max-height:300px; overflow-y:auto;">
+        <p style="color:#94a3b8; text-align:center; padding:1rem;">Type to search pages, services, or events...</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ==========================================================================
+       FLOATING ACTION WIDGETS
+       ========================================================================== -->
+  <!-- Audio Anthem Player -->
+  <div class="anthem-floating-bar">
+    <button id="anthem-play-btn" style="width:38px; height:38px; border-radius:50%; background:var(--accent-gold); color:var(--primary-navy); border:none; cursor:pointer; font-size:1rem; display:flex; justify-content:center; align-items:center;">
+      <i class="fas fa-play"></i>
+    </button>
+    <div style="display:flex; flex-direction:column;">
+      <span style="font-weight:700; font-size:0.85rem; color:var(--text-dark);">School Anthem</span>
+      <span id="anthem-status" style="font-size:0.75rem; color:var(--accent-emerald);">Listen to Anthem</span>
+    </div>
+  </div>
+
+  <!-- Floating Right Buttons -->
+  <div class="floating-actions-right">
+    <a href="https://wa.me/2347064638054?text=Hello%20Brighter%20Glory%20School,%20I%20would%20like%20to%20inquire%20about%20admissions." target="_blank" class="float-btn float-whatsapp" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <button class="float-btn float-back-top" onclick="window.scrollTo({top:0, behavior:'smooth'})" title="Back to Top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+  </div>
+
+  <!-- Leaflet JS CDN -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
