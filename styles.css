@@ -103,65 +103,6 @@ h1, h2, h3, h4, h5, h6 {
    TOP ANNOUNCEMENT BAR & NAVIGATION
    ========================================================================== */
 
-.top-bar {
-  background: linear-gradient(90deg, #1e3a8a, #0f172a, #b45309);
-  color: #ffffff;
-  font-size: 0.875rem;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.top-bar-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.ticker-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-weight: 600;
-}
-
-.badge-live {
-  background: var(--accent-gold);
-  color: var(--primary-navy);
-  padding: 2px 8px;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  animation: pulse-badge 2s infinite;
-}
-
-@keyframes pulse-badge {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.85; transform: scale(1.04); }
-}
-
-.top-contacts {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-}
-
-.top-contacts a {
-  color: rgba(255, 255, 255, 0.9);
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  transition: var(--transition-fast);
-}
-
-.top-contacts a:hover {
-  color: var(--accent-gold-light);
-}
-
 /* Sticky Main Navigation */
 .navbar {
   position: sticky;
